@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>溯源链接计数平台 - 项目PPT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        body { margin: 0; padding: 0; font-family: "Microsoft YaHei", Arial, sans-serif; }
+        .slide { width: 100vw; height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 0 5vw; box-sizing: border-box; }
+        .slide-1 { background: linear-gradient(135deg, #165dff 0%, #4080ff 100%); color: #fff; }
+        .slide-2 { background-color: #f8fafc; }
+        .slide-3 { background-color: #fff; border-top: 1px solid #e2e8f0; }
+        .slide-4 { background-color: #f8fafc; }
+        .slide-5 { background-color: #fff; border-top: 1px solid #e2e8f0; }
+        .slide-6 { background: linear-gradient(135deg, #165dff 0%, #4080ff 100%); color: #fff; }
+        .container { width: 100%; max-width: 1200px; margin: 0 auto; }
+        .title { font-size: 2.5rem; font-weight: 700; margin-bottom: 1.5rem; text-align: center; }
+        .subtitle { font-size: 1.25rem; line-height: 1.8; text-align: center; max-width: 800px; margin: 0 auto; }
+        .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 3rem; }
+        .card { background-color: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); padding: 2rem; transition: transform 0.3s ease; }
+        .card:hover { transform: translateY(-5px); }
+        .card-icon { font-size: 2rem; color: #165dff; margin-bottom: 1rem; }
+        .card-title { font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: #333; }
+        .card-desc { font-size: 1rem; color: #666; line-height: 1.6; }
+        .func-img { width: 100%; border-radius: 8px; border: 1px solid #e2e8f0; margin-top: 1.5rem; }
+        .btn { display: inline-block; padding: 0.75rem 2rem; background-color: #165dff; color: #fff; border-radius: 8px; font-size: 1rem; font-weight: 600; text-decoration: none; margin-top: 2rem; transition: background-color 0.3s ease; }
+        .btn:hover { background-color: #0e4bdb; }
+        .footer { position: fixed; bottom: 2rem; left: 0; right: 0; text-align: center; color: #999; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <!-- 第1页：封面页 - 项目定位 -->
+    <div class="slide slide-1">
+        <div class="container">
+            <div class="title">溯源链接计数平台</div>
+            <div class="subtitle">专为KOL与内容创作者打造的轻量化工具<br>1分钟生成溯源链接，实时统计点击量，轻松掌握推广效果，微信联系：aoxueluoluo</div>
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="#slide2" class="btn">了解更多 <i class="fa fa-arrow-right ml-2"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 第2页：场景痛点 - 解决什么问题 -->
+    <div class="slide slide-2" id="slide2">
+        <div class="container">
+            <div class="title text-gray-800">核心场景痛点</div>
+            <div class="subtitle text-gray-600">这些问题，我们帮你解决</div>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-icon"><i class="fa fa-bar-chart"></i></div>
+                    <div class="card-title">推广效果无数据支撑</div>
+                    <div class="card-desc">分享链接后无法统计点击量，无法向品牌证明推广价值，合作议价缺乏依据。</div>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fa fa-link"></i></div>
+                    <div class="card-title">多渠道效果难区分</div>
+                    <div class="card-desc">同一内容发朋友圈、小红书、抖音，无法判断哪个渠道引流效果更好，优化无方向。</div>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fa fa-clock-o"></i></div>
+                    <div class="card-title">工具复杂上手难</div>
+                    <div class="card-desc">传统统计工具需技术配置，步骤繁琐，内容创作者没时间学习，急需轻量化解决方案。</div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="#slide3" class="btn">查看解决方案 <i class="fa fa-arrow-right ml-2"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 第3页：项目价值 - 核心优势 -->
+    <div class="slide slide-3" id="slide3">
+        <div class="container">
+            <div class="title text-gray-800">项目核心价值</div>
+            <div class="subtitle text-gray-600">3大优势，直击需求痛点</div>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-icon"><i class="fa fa-bolt"></i></div>
+                    <div class="card-title">极致轻量化</div>
+                    <div class="card-desc">无需技术对接，手机号1分钟注册，填“目标链接+备注”即可生成溯源链接，操作零门槛。</div>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fa fa-line-chart"></i></div>
+                    <div class="card-title">数据实时准确</div>
+                    <div class="card-desc">点击量实时统计，用户点击后1秒更新数据，支持单链接导出Excel，数据可直接用于品牌沟通。</div>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fa fa-mobile"></i></div>
+                    <div class="card-title">全场景适配</div>
+                    <div class="card-desc">支持朋友圈、小红书、抖音等所有渠道分享，链接适配PC/手机端，用户点击无缝跳转目标页面。</div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="#slide4" class="btn">看功能演示 <i class="fa fa-arrow-right ml-2"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 第4页：功能展示1 - 链接生成与管理 -->
+    <div class="slide slide-4" id="slide4">
+        <div class="container">
+            <div class="title text-gray-800">核心功能演示（一）</div>
+            <div class="subtitle text-gray-600">链接生成与管理，简单高效</div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
+                <div>
+                    <div class="card-title text-left">1. 生成溯源链接</div>
+                    <div class="card-desc text-left mt-1">仅需2步：<br>① 输入目标链接（如品牌活动页）<br>② 填写备注（如“10.5朋友圈推广”）<br>点击“生成”即可获取专属溯源链接。</div>
+                    <img src="https://picsum.photos/id/0/600/400" alt="生成链接界面" class="func-img">
+                </div>
+                <div>
+                    <div class="card-title text-left">2. 管理所有链接</div>
+                    <div class="card-desc text-left mt-1">直观展示所有链接信息：<br>① 备注名称、溯源链接、生成时间<br>② 实时点击量（红色数字突出）<br>③ 支持复制、导出、禁用操作。</div>
+                    <img src="https://picsum.photos/id/180/600/400" alt="链接管理界面" class="func-img">
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="#slide5" class="btn">看数据导出演示 <i class="fa fa-arrow-right ml-2"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 第5页：功能展示2 - 数据统计与导出 -->
+    <div class="slide slide-5" id="slide5">
+        <div class="container">
+            <div class="title text-gray-800">核心功能演示（二）</div>
+            <div class="subtitle text-gray-600">数据统计与导出，满足品牌沟通需求</div>
+            <div style="max-width: 800px; margin: 0 auto; margin-top: 2rem;">
+                <div class="card-title text-left">1. 实时点击统计</div>
+                <div class="card-desc text-left mt-1">每个链接卡片实时显示“总点击量”，用户点击后立即更新，无需刷新页面，推广效果一目了然。</div>
+                <img src="https://picsum.photos/id/48/800/300" alt="点击量统计界面" class="func-img">
+                
+                <div class="card-title text-left mt-4">2. 一键导出数据</div>
+                <div class="card-desc text-left mt-1">点击“导出”按钮，1秒下载Excel文件，包含“链接备注、目标链接、总点击量、生成时间”，数据格式清晰，可直接发给品牌方作为推广凭证。</div>
+                <img src="https://picsum.photos/id/160/800/300" alt="数据导出界面" class="func-img">
+            </div>
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="#slide6" class="btn">了解落地计划 <i class="fa fa-arrow-right ml-2"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 第6页：总结与落地 - 项目收尾 -->
+    <div class="slide slide-6" id="slide6">
+        <div class="container">
+            <div class="title">项目总结与落地</div>
+            <div class="subtitle">小工具解决大问题，快速落地创造价值</div>
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; margin-top: 3rem; max-width: 1000px; margin: 3rem auto 0;">
+                <div style="background-color: rgba(255, 255, 255, 0.1); padding: 2rem; border-radius: 12px;">
+                    <div class="card-title text-white">项目总结</div>
+                    <div class="card-desc text-white mt-1 line-height: 1.8;">
+                        溯源链接计数平台聚焦KOL与内容创作者的核心需求，以“轻量化、实时化、易用化”为核心，解决“推广效果无数据、多渠道难区分、工具上手难”三大痛点，是一款高性价比的效率工具。
+                    </div>
+                </div>
+                <div style="background-color: rgba(255, 255, 255, 0.1); padding: 2rem; border-radius: 12px;">
+                    <div class="card-title text-white">落地计划</div>
+                    <div class="card-desc text-white mt-1 line-height: 1.8;">
+                        1. 开发周期：5-7个工作日（极简版MVP）<br>
+                        2. 上线成本：单服务器部署，低运维成本<br>
+                        3. 推广方向：先服务中小KOL，再逐步拓展至企业用户
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 4rem;">
+                <a href="#slide1" class="btn">返回首页 <i class="fa fa-home ml-2"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚导航提示 -->
+    <div class="footer">
+        按顺序浏览：首页 → 场景痛点 → 项目价值 → 功能演示 → 落地计划 | 点击按钮或滚动页面切换
+    </div>
+
+    <!-- 平滑滚动脚本 -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // 全屏模式支持
+        function toggleFullscreen() {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen();
+            } else {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                }
+            }
+        }
+        // 按F11触发全屏
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'F11') {
+                e.preventDefault();
+                toggleFullscreen();
+            }
+        });
+    </script>
+</body>
+</html>
